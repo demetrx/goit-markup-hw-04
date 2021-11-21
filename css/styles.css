@@ -81,9 +81,13 @@ a {
     color: inherit;
 }
 
-.auth-nav a, footer a{
+.auth-nav a{
     color: var(--paragraph-text-color);
 }
+
+footer a{
+    color: rgba(255, 255, 255, 0.6);
+    }
 
 .list{
     list-style: none;
@@ -177,6 +181,7 @@ address{
 .filter button{
     font-weight: 500;
     font-size: 16px;
+    font-family: inherit;
     line-height: 1.62;
     text-align: center;
     background-color: var(--secondary-background-colour);
@@ -210,15 +215,14 @@ address{
     padding:0 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 94px;
     box-sizing: border-box;
 }
 
-.hero .container{
+.hero{
     padding: 200px 0;
 }
-.our-team .container,
-header .container{
+.our-team,
+header{
     margin-bottom: 0;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -238,7 +242,7 @@ header .container{
     padding-bottom: 30px;
 }
 
-.our-team .container{
+.our-team{
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -260,28 +264,27 @@ p{
 }
 .portfolio h2{
     text-align: left;
-    margin-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
 }
 
-.portfolio p{
-    margin-left: 24px;
-}
-
-.portfolio .container{
+.portfolio{
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
     margin-bottom: 0;
 }
 
+.projects div{
+    padding: 20px 24px;
+}
+
+
 .portfolio li:not(.filter li){
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     text-align: left;
-    padding-bottom: 20px;
 }
+
 .site-nav,
 .auth-nav,
 header>.container,
@@ -299,8 +302,16 @@ ul{
     margin-right: 50px;
 }
 .site-nav{
-    margin-left: 95px;
-    
+    margin-left: 95px; 
+}
+
+.ocupation{
+    padding-bottom: 94px;
+}
+
+.advantages{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .advantages ul,
@@ -336,6 +347,10 @@ address li{
 
 .projects li{
     margin-bottom: 30px;
+}
+
+.projects li:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects li:nth-last-child(-n+3){
